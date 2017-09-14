@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.blue, .red, .purple, .green, .gold{
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+}
+
+body div div{
+    margin: 5px;
+}
+
+    .blue div{
+        background-color: blue;
+        width: 50%;
+    }
+
+    .red div{
+        background-color: red;
+        width: 25%;
+    }
+        .red div:nth-child(2){
+            width: 50%;
+        }
+
+    .purple div{
+        background-color: purple;
+        width: 40%;
+    }
+        .purple div:nth-child(2){
+            width: 20%;
+        }
+
+    .green div{
+        background-color: green;
+        width: 33.333%;
+    }
+        .green{
+            justify-content: space-between;
+        }
+
+    .gold div{
+        background-color: gold;
+        width: 25%;
+    }
+        .gold div:last-child{
+            margin-left: auto;
+        }
+
+
+/*  Page2.html  */
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+
+}
+
+    .pane{
+        position: relative;
+        border: 1px solid gray;
+        margin: 10px;
+        height: auto;
+        background-color: lightgray;
+    }
+
+        .pane:first-child{
+            width: 75%;
+        }
+
+        .pane:last-child{
+            width: 25%;
+        }
+
+.footer{
+    background-color: gray;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+}
+
+/*  page3.html  */
+
+.flex-container{
+    width: 900px;
+}
+
+    .flex-container *{
+        margin: 10px;
+        background-color: blue;
+    }
